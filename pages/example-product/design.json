@@ -1,0 +1,119 @@
+{
+  "slug": "example-product",
+  "url": "/catalog/example-product",
+  "title": "Example Product",
+  "closing": "YOUR CLOSING LINE HERE",
+  "target": 30.0,
+  "_comment": "A synthetic page, here to document the schema and to give build30.py something to validate. The slate codes are placeholders: they resolve through config.POOLS to whatever footage library you point VSP_PROXIES at. Every field below is read by build30.py except those prefixed with an underscore.",
+  "beats": [
+    {
+      "name": "Hook",
+      "vo": "Name the product in one line.",
+      "captions": [["EXAMPLE PRODUCT", 0.2, 4.0]],
+      "shots": [
+        {
+          "clip": "1A 01 A",
+          "start": 6.5,
+          "dur": 2.0,
+          "note": "why this shot: the product in use, wide enough to read",
+          "adjust": "eq=brightness=0.05",
+          "adjust_note": "77 -> ~90; darkest opening, lift toward its partner"
+        },
+        {
+          "clip": "1A 02 A",
+          "start": 30.0,
+          "dur": 2.0,
+          "note": "same subject, tight",
+          "shake_note": "was @4.0; @30.0 measures steadier on the 480-wide metric"
+        }
+      ],
+      "voice": "vo1.wav"
+    },
+    {
+      "name": "Where it goes",
+      "vo": "The surfaces it lives on.",
+      "captions": [["SURFACE · SURFACE · SURFACE", 4.0, 9.0]],
+      "shots": [
+        {
+          "clip": "1B 01 A",
+          "start": 32.0,
+          "dur": 2.5,
+          "note": "applied, in context"
+        },
+        {
+          "clip": "1B 02 A",
+          "start": 5.0,
+          "dur": 2.5,
+          "note": "second surface",
+          "adjust": "eq=brightness=-0.03",
+          "adjust_note": "117 -> ~108; brightest of beat 2"
+        }
+      ],
+      "voice": "vo2.wav"
+    },
+    {
+      "name": "Made in-house",
+      "vo": "Who makes it, and how many.",
+      "captions": [["PRINTED & CUT IN-HOUSE", 9.0, 14.0]],
+      "shots": [
+        {
+          "clip": "4A 01 B",
+          "start": 20.0,
+          "dur": 2.5,
+          "note": "the press"
+        },
+        {
+          "clip": "4A 02 B",
+          "start": 2.0,
+          "dur": 2.5,
+          "note": "the cutter",
+          "shake_note": "0.25 locked off"
+        }
+      ],
+      "voice": "vo3.wav"
+    },
+    {
+      "name": "Ordering",
+      "vo": "How a customer buys it, and what the options are.",
+      "captions": [
+        ["DESIGN ONLINE OR UPLOAD A FILE", 14.0, 18.5],
+        ["FROM ONE UP", 18.5, 22.5]
+      ],
+      "shots": [
+        {
+          "clip": "2A 01 A",
+          "start": 3.0,
+          "dur": 2.8,
+          "note": "customer ordering on a laptop"
+        },
+        {
+          "clip": "2A 02 A",
+          "start": 11.0,
+          "dur": 2.8,
+          "note": "the configurator, mid-choice"
+        },
+        {
+          "clip": "2B 01 A",
+          "start": 0.5,
+          "dur": 2.9,
+          "note": "confirmation"
+        }
+      ],
+      "voice": "vo4.wav"
+    },
+    {
+      "name": "Payoff",
+      "vo": "It arrives.",
+      "captions": [["FREE PROOF BEFORE PRODUCTION", 22.5, 27.0]],
+      "shots": [
+        {
+          "clip": "2C 01 A",
+          "start": 8.0,
+          "dur": 4.5,
+          "note": "one continuous action - the box opening. Do not cut this."
+        }
+      ],
+      "voice": "vo5.wav"
+    }
+  ]
+}

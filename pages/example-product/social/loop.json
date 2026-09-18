@@ -1,0 +1,47 @@
+{
+  "eyebrow": "EXAMPLE PRODUCT",
+  "bars": 3,
+  "layout": "full",
+  "music": "../music/bed_loop1.wav",
+  "loop": "repeat",
+  "_comment": "A social cut is short because it inherits. \"from\": \"<page>:<beat>:<shot index>\" pulls that shot's clip, in-point, brightness adjust and stabilisation from the built page verbatim - windows already measured for shake and matched for brightness. Only what differs for a vertical crop is written here: the pan, the duration on the bar grid, and a re-levelled adjust.",
+  "shots": [
+    {
+      "from": "example-product:Payoff:0",
+      "dur": 2.0,
+      "pan": 0.3,
+      "note": "opens and closes the cut",
+      "adjust": "eq=brightness=-0.070",
+      "adjust_note": "102 -> 105 in this cut"
+    },
+    {
+      "from": "example-product:Hook:1",
+      "dur": 1.9,
+      "pan": 0.0,
+      "note": "compact subject - survives the 9:16 crop at centre",
+      "adjust": "eq=gamma=0.85:brightness=-0.250",
+      "adjust_note": "114 -> 105 in this cut"
+    },
+    {
+      "from": "example-product:Where it goes:0",
+      "dur": 1.967,
+      "pan": 0.5,
+      "note": "pan +0.5: at centre the subject sits almost off frame right",
+      "adjust": "eq=brightness=0.108",
+      "adjust_note": "106 -> 105 in this cut"
+    },
+    {
+      "from": "example-product:Payoff:0",
+      "dur": 0.8,
+      "pan": 0.3,
+      "note": "return to the opening image, kept short so the last frame lands near the first",
+      "adjust": "eq=brightness=-0.077",
+      "adjust_note": "105 -> 105 in this cut"
+    }
+  ],
+  "claims": [
+    {
+      "lines": ["A SHORT CLAIM", "IN UP TO", "THREE LINES"]
+    }
+  ]
+}
