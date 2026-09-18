@@ -35,6 +35,11 @@ def frames():
     out = []
     for digit, pool in sorted(clip_mod.POOLS.items()):
         folder = os.path.join(clip_mod.PROXIES, pool)
+        # A library need not carry every pool. Survey what is there and say
+        # which are missing, rather than failing on the first absent one.
+        if not os.path.isdir(folder):
+            print(f"  pool {digit}: no folder at {folder} — skipped")
+            continue
         for name in sorted(os.listdir(folder)):
             if "_proxy" not in name.lower() or name.lower().endswith(".xmp"):
                 continue
